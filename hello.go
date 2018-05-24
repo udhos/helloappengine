@@ -12,7 +12,7 @@ func main() {
 	appengine.Main()
 }
 
-const version = "0.2"
+const version = "0.3"
 
 func handle(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, "Hello, world! version %s\n", version)
