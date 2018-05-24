@@ -56,3 +56,10 @@ View
 
 Open http://myProject.appspot.com/
 
+Download
+========
+
+You can download your application code from app engine by using:
+
+    python ~/google-cloud-sdk/platform/google_appengine/appcfg.py -A myProject -V [YOUR_VERSION_ID] download_app [OUTPUT_DIR] --noauth_local_webserver
+
