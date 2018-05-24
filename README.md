@@ -4,7 +4,13 @@ helloappengine - app engine go example
 Install GCP SDK
 ===============
 
-    https://cloud.google.com/sdk/docs/#linux
+Download SDK from: https://cloud.google.com/sdk/docs/#linux
+
+    wget https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-192.0.0-linux-x86_64.tar.gz
+    tar xf google-cloud-sdk-192.0.0-linux-x86_64.tar.gz
+    ./google-cloud-sdk/install.sh
+
+    gcloud init
 
 Update SDK
 ==========
@@ -19,12 +25,12 @@ Install app engine go component for SDK
 Get app engine package
 ======================
 
-    google.golang.org/appengine
+    go get google.golang.org/appengine
 
 Test
 ====
 
-dev_appserver.py does not run with empty GOPATH.
+Note on GOPATH: dev_appserver.py does not run with empty GOPATH.
 
     GOPATH=~/go dev_appserver.py app.yaml --host=0.0.0.0 --enable_host_checking=false
 
