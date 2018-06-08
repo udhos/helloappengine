@@ -22,6 +22,13 @@ Install app engine go component for SDK
 
     gcloud components install app-engine-go
 
+Authentication
+==============
+
+You can use this command to provide the SDK with an auth token for your GCP user:
+
+    gcloud auth application-default login
+
 Get app engine package
 ======================
 
